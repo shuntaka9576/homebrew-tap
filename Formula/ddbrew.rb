@@ -5,11 +5,11 @@
 class Ddbrew < Formula
   desc "Simple DynamoDB utility"
   homepage "https://blog.hozi.dev/"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    url "https://github.com/shuntaka9576/ddbrew/releases/download/v0.1.0/ddbrew_0.1.0_Darwin_amd64.tar.gz"
-    sha256 "35d20953f5c0765a307246717e8b48c28d95724b52ff26db52e229b6f4971c4c"
+    url "https://github.com/shuntaka9576/ddbrew/releases/download/v0.1.1/ddbrew_0.1.1_Darwin_amd64.tar.gz"
+    sha256 "bb57f67c8968acaf83c9047bb5ae70ff2022b5ec9b19e23ffbd92ef02b33a3da"
 
     def install
       bin.install "ddbrew"
@@ -28,8 +28,8 @@ class Ddbrew < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/ddbrew/releases/download/v0.1.0/ddbrew_0.1.0_Linux_amd64.tar.gz"
-      sha256 "70c0798c11e9b576a7b424861aed52586ce96cf7858ab4cf986970e087f29317"
+      url "https://github.com/shuntaka9576/ddbrew/releases/download/v0.1.1/ddbrew_0.1.1_Linux_amd64.tar.gz"
+      sha256 "a5286099726b39bf61f048d13e212c2ddd64583c39069c04dc4a2000e001dfba"
 
       def install
         bin.install "ddbrew"
