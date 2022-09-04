@@ -9,7 +9,7 @@ class Sshcmd < Formula
 
   on_macos do
     url "https://github.com/shuntaka9576/sshcmd/releases/download/v0.0.1/sshcmd_0.0.1_Darwin_amd64.tar.gz"
-    sha256 "da8c69fdc3098487e6124ee9ccaf58c3c1adbd04141be711904d303e302dc685"
+    sha256 "ffa074c8f9afcd47fa8aadc16aba7e6620a925c13f64082b4d68aeb0d9dcac73"
 
     def install
       bin.install "sshcmd"
@@ -29,7 +29,7 @@ class Sshcmd < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/shuntaka9576/sshcmd/releases/download/v0.0.1/sshcmd_0.0.1_Linux_amd64.tar.gz"
-      sha256 "c709d8704ccabfc61a37274904ea033eb327a4767ec7f2da7e459dccb9b0efda"
+      sha256 "f9c4ff09469b1b6614aacbd0f9b338e69944865d4e2bf12d6e7f0d3c72442bc2"
 
       def install
         bin.install "sshcmd"
