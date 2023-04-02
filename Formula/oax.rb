@@ -5,11 +5,11 @@
 class Oax < Formula
   desc "CLI for OpenAI's ChatGPT"
   homepage "https://blog.hozi.dev/"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
-    url "https://github.com/shuntaka9576/oax/releases/download/v0.1.1/oax_0.1.1_Darwin_amd64.tar.gz"
-    sha256 "c15a310a931c54723775e1bcfa56621f8e0470ffe570d5babbd6e3fe26a5a697"
+    url "https://github.com/shuntaka9576/oax/releases/download/v0.1.2/oax_0.1.2_Darwin_amd64.tar.gz"
+    sha256 "6a5b6d45f5de2d5403d0953e56cfc2d7269121133ddaa2e58cc2c5610fda4292"
 
     def install
       bin.install "oax"
@@ -28,8 +28,8 @@ class Oax < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/oax/releases/download/v0.1.1/oax_0.1.1_Linux_amd64.tar.gz"
-      sha256 "075d40e8243a6a0944839e3b044b989d88b7c877ee3b2cdb8ed29cef6ada3a2b"
+      url "https://github.com/shuntaka9576/oax/releases/download/v0.1.2/oax_0.1.2_Linux_amd64.tar.gz"
+      sha256 "ec7849fb5d48fc81ef73fe8c2f2d31b11893789b9b4f025c22b66c8a960c40c8"
 
       def install
         bin.install "oax"
