@@ -5,21 +5,21 @@
 class NoFriPush < Formula
   desc "Don't Push to Production on Friday!"
   homepage "https://shuntaka.dev/"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.0/no-fri-push_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ccf46d07b9fb56d3a9713483a718b21a37143647e3df43725aa6aac35fd809e2"
+      url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.1/no-fri-push_0.1.1_darwin_amd64.tar.gz"
+      sha256 "6c14756a582e093df9a0e64fc7e976a5d27c56bb4821ecc2a60f23b1209f001e"
 
       def install
         bin.install "no-fri-push"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.0/no-fri-push_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7fc58e3b2a4aa587a4a891b935391d6c355c2fc9c2c4c3838590b6ff394a3d14"
+      url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.1/no-fri-push_0.1.1_darwin_arm64.tar.gz"
+      sha256 "3b8ffe78c567a199e2344b4c094d28fdf1a15e7df0016d3d1920d6f279819cd2"
 
       def install
         bin.install "no-fri-push"
@@ -30,8 +30,8 @@ class NoFriPush < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.0/no-fri-push_0.1.0_linux_amd64.tar.gz"
-        sha256 "03d7913b1d4681c0106fd9a8fa5b9993afa7136499ad203a7baf308082014fff"
+        url "https://github.com/shuntaka9576/no-fri-push/releases/download/v0.1.1/no-fri-push_0.1.1_linux_amd64.tar.gz"
+        sha256 "581de3d1f9eb9b17b15a290223cea2004791688ec50b84d4704ae65384cd1376"
 
         def install
           bin.install "no-fri-push"
