@@ -5,21 +5,21 @@
 class Cal2prompt < Formula
   desc "✨ Fetches your schedule (e.g., from Google Calendar) and converts it into a single LLM prompt. It can also run as an MCP (Model Context Protocol) server."
   homepage "https://shuntaka.dev/"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.2.0/cal2prompt_0.2.0_darwin_amd64.tar.gz"
-      sha256 "1bc060ca05a1f1c131587e0800d00b83f0ef9957d905f952796519fccd8e4b5d"
+      url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.3.0/cal2prompt_0.3.0_darwin_amd64.tar.gz"
+      sha256 "093589edde17a2f2067fa3126a0b2e409f124c4898a90be7e76d0a13dd4494be"
 
       def install
         bin.install "cal2prompt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.2.0/cal2prompt_0.2.0_darwin_arm64.tar.gz"
-      sha256 "f80453c0cafdfab00bcf517687a082e8177c23d94cb890471d065f3e5b703500"
+      url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.3.0/cal2prompt_0.3.0_darwin_arm64.tar.gz"
+      sha256 "bff7932cf9bd3033f9c0255ffc5cbc5a84bbb505287316e907c701a22c2cfe5c"
 
       def install
         bin.install "cal2prompt"
@@ -30,8 +30,8 @@ class Cal2prompt < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.2.0/cal2prompt_0.2.0_linux_amd64.tar.gz"
-        sha256 "8d68324f682fcdd22969cb23163f0ef48213d4cbc81fb6130b6fd353da07598c"
+        url "https://github.com/shuntaka9576/cal2prompt/releases/download/v0.3.0/cal2prompt_0.3.0_linux_amd64.tar.gz"
+        sha256 "fcae693d4e5a07aa054f02d4b5f462202427f8f71eae55592c02ad54ec865015"
 
         def install
           bin.install "cal2prompt"
