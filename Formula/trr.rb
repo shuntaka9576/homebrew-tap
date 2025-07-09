@@ -5,21 +5,21 @@
 class Trr < Formula
   desc "🌿 Branch isolation tool using tmux + rsync. Create dedicated workspaces for each git branch with automatic tmux window management."
   homepage "https://shuntaka.dev/"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.0/trr_0.1.0_darwin_amd64.tar.gz"
-      sha256 "450d60afb955e30bbfa8cbeb833c6f82fd7e7551a92828c9834bc24b56d6352c"
+      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.1/trr_0.1.1_darwin_amd64.tar.gz"
+      sha256 "5feff19664653a2b0fb9f0350641b1f1418fdc6ebffa3dcf29d729fccf2511a1"
 
       def install
         bin.install "trr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.0/trr_0.1.0_darwin_arm64.tar.gz"
-      sha256 "9ebdc6d58d9cac9efdb3d62fb52889bd0fe848ad2cee6331bfb2145f1155ffb3"
+      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.1/trr_0.1.1_darwin_arm64.tar.gz"
+      sha256 "8c925a441920ea4b8288d0775397b4f23978d301436d5b87553e2e3e0d8b1002"
 
       def install
         bin.install "trr"
@@ -29,15 +29,15 @@ class Trr < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.0/trr_0.1.0_linux_amd64.tar.gz"
-      sha256 "19434263915d077a4cce9277fb521ca0c07cdd2a7afb13b95bd47e75adb51cb8"
+      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.1/trr_0.1.1_linux_amd64.tar.gz"
+      sha256 "4cc4e3fd7f25ca66a0abde2a46c76fcbf55415e2242fe263fa20834874cf7b2c"
       def install
         bin.install "trr"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.0/trr_0.1.0_linux_arm64.tar.gz"
-      sha256 "c24b067da60cf791d905e2b115d91373dd3da87a05988ddca5210efbf5d48889"
+      url "https://github.com/shuntaka9576/trr/releases/download/v0.1.1/trr_0.1.1_linux_arm64.tar.gz"
+      sha256 "6f3eb5631c8c95913094a96edffc36a4f4508b977a085bc0390a4ee3fc833384"
       def install
         bin.install "trr"
       end
