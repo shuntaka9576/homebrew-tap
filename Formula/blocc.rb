@@ -5,11 +5,11 @@
 class Blocc < Formula
   desc "Execute multiple commands and block Claude Code Hooks by returning exit 2 with stderr on failures 🛡️"
   homepage "https://github.com/shuntaka9576/blocc"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
-    url "https://github.com/shuntaka9576/blocc/releases/download/v0.3.0/blocc_0.3.0_Darwin_amd64.tar.gz"
-    sha256 "e159a971c2bb5f9ccfb5f84c7ed71cb7942556e9ebfbc8279688c87793536154"
+    url "https://github.com/shuntaka9576/blocc/releases/download/v0.4.0/blocc_0.4.0_Darwin_amd64.tar.gz"
+    sha256 "225122600c069862f3d72964c7d0b72895933396ec5daa40ba2b6c8fa2d565b1"
 
     def install
       bin.install "blocc"
@@ -28,8 +28,8 @@ class Blocc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/shuntaka9576/blocc/releases/download/v0.3.0/blocc_0.3.0_Linux_amd64.tar.gz"
-      sha256 "5438f086af713cb3d1a6b449981a20cb034b21794ed67e7ccf0b6fe401c56970"
+      url "https://github.com/shuntaka9576/blocc/releases/download/v0.4.0/blocc_0.4.0_Linux_amd64.tar.gz"
+      sha256 "b3705ba383bafc30d413b0306a0af2773d4301735e4ed609ce818661ccce3e2a"
       def install
         bin.install "blocc"
       end
