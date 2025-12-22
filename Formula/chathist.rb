@@ -5,21 +5,21 @@
 class Chathist < Formula
   desc "A lightweight CLI tool to view and export your AI coding agent's chat history."
   homepage "https://shuntaka.dev/"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shuntaka9576/chathist/releases/download/v0.1.0/chathist_0.1.0_darwin_amd64.tar.gz"
-      sha256 "74d1db613559beb3041e19b6c48ac63ce7dfb992fc40ac20ca1e4634049b2891"
+      url "https://github.com/shuntaka9576/chathist/releases/download/v0.2.0/chathist_0.2.0_darwin_amd64.tar.gz"
+      sha256 "779a36fc297ea66052e2d61e277fd282742cc31a2ed2438c1217cfab5f7d34f6"
 
       def install
         bin.install "chathist"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shuntaka9576/chathist/releases/download/v0.1.0/chathist_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d066015f0c636ba1c813fee7953683af3c2783b8afe76703eb65e56d5d14d094"
+      url "https://github.com/shuntaka9576/chathist/releases/download/v0.2.0/chathist_0.2.0_darwin_arm64.tar.gz"
+      sha256 "53570df0ebe073b84f5995aabf0b245e4150794b527d9536c733af75d93257aa"
 
       def install
         bin.install "chathist"
@@ -29,8 +29,8 @@ class Chathist < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shuntaka9576/chathist/releases/download/v0.1.0/chathist_0.1.0_linux_amd64.tar.gz"
-      sha256 "9b2e71e728b85f6c63cfd18680878455ba6d9bd99da52c430e3b9587476bd2f1"
+      url "https://github.com/shuntaka9576/chathist/releases/download/v0.2.0/chathist_0.2.0_linux_amd64.tar.gz"
+      sha256 "ade6bd6bd41d3f56ab568feede695af215fb1150235362a934889623b000bf5f"
       def install
         bin.install "chathist"
       end
