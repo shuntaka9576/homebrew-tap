@@ -1,9 +1,9 @@
 class AgentoastCli < Formula
   desc "CLI notification tool for AI coding agents"
   homepage "https://github.com/shuntaka9576/agentoast"
-  url "https://github.com/shuntaka9576/agentoast/releases/download/v0.12.0/agentoast_0.12.0_darwin_arm64.tar.gz"
-  sha256 "5d1720b2b03e9a8a99cbf0a40a42615124628d6ad952a84748dcfee7e43cc170"
-  version "0.12.0"
+  url "https://github.com/shuntaka9576/agentoast/releases/download/v0.12.1/agentoast_0.12.1_darwin_arm64.tar.gz"
+  sha256 "d30bbe5fe7f7b75383f1467936ae0908a1efae98ffcf972ae9771b119dd342f9"
+  version "0.12.1"
   license "MIT"
 
   def install
