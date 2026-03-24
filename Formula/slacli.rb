@@ -5,13 +5,13 @@
 class Slacli < Formula
   desc "Slack CLI built with Rust"
   homepage "https://shuntaka.dev/"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shuntaka9576/slacli/releases/download/v0.0.3/slacli_0.0.3_darwin_arm64.tar.gz"
-      sha256 "58bfccc263eb58aa789119ad5eac0730b587fdd1c25be71e64776f8de217fad6"
+      url "https://github.com/shuntaka9576/slacli/releases/download/v0.0.4/slacli_0.0.4_darwin_arm64.tar.gz"
+      sha256 "d1992c54fa356a8eebb629452f3abf32679937eff830a12fba09af71d88cd555"
 
       define_method(:install) do
         bin.install "slacli"
@@ -21,8 +21,8 @@ class Slacli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shuntaka9576/slacli/releases/download/v0.0.3/slacli_0.0.3_linux_amd64.tar.gz"
-      sha256 "8bc3b3b7c5a99cbf6f671445a9afcaeca1e24a273069e27b0c47f99404e7e4e6"
+      url "https://github.com/shuntaka9576/slacli/releases/download/v0.0.4/slacli_0.0.4_linux_amd64.tar.gz"
+      sha256 "96d1aec4bab84bdb9c08ca76c9ce115c21ee9a3f014f62efe0a496b05654d12d"
       define_method(:install) do
         bin.install "slacli"
       end
