@@ -1,8 +1,8 @@
 cask "agentoast" do
-  version "0.32.0"
-  sha256 "79693c5bee5a0f413ab1b10ed039f20b451af93936d02d489d94b5621bcc44c4"
+  version "0.32.1"
+  sha256 "7c914a2c79dd33d20f4bbf18085a5b9da29bddf2c880df379395aeb3d0cb9c40"
 
-  url "https://github.com/shuntaka9576/agentoast/releases/download/v0.32.0/Agentoast_0.32.0_aarch64.dmg"
+  url "https://github.com/shuntaka9576/agentoast/releases/download/v0.32.1/Agentoast_0.32.1_aarch64.dmg"
   name "Agentoast"
   desc "macOS menu bar notification app for AI coding agents"
   homepage "https://github.com/shuntaka9576/agentoast"
